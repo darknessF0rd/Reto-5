@@ -6,13 +6,13 @@ public class Panel {
     private String tipoPanel;
     private String nombreModelo;
     private int anioFabricacion;
-    private double precioVenta;
+    private int precioVenta;
     private String antiguedad;
 
     //Constructores
     public Panel() {
     }
-    public Panel(int identificarEmpresa, int identificarSerie, String descripcion, String tipoPanel, String nombreModelo, int anioFabricacion, double precioVenta) {
+    public Panel(int identificarEmpresa, int identificarSerie, String descripcion, String tipoPanel, String nombreModelo, int anioFabricacion, int precioVenta) {
         this.identificarEmpresa = identificarEmpresa;
         this.identificarSerie = identificarSerie;
         this.descripcion = descripcion;
@@ -38,4 +38,63 @@ public class Panel {
         }
         return this.antiguedad;
     }
+
+    //Getter
+    public int getIdentificarEmpresa() {
+        return identificarEmpresa;
+    }
+
+    public int getIdentificarSerie() {
+        return identificarSerie;
+    }
+
+    public String getDescripcion() {
+        return descripcion;
+    }
+
+    public String getTipoPanel() {
+        return tipoPanel;
+    }
+
+    public String getNombreModelo() {
+        return nombreModelo;
+    }
+
+    public int getAnioFabricacion() {
+        return anioFabricacion;
+    }
+
+    public int getPrecioVenta() {
+        return precioVenta;
+    }
+
+    //Setter
+    public void setIdentificarEmpresa(int identificarEmpresa) {
+        this.identificarEmpresa = identificarEmpresa;
+    }
+
+    public void setIdentificarSerie(int identificarSerie) {
+        this.identificarSerie = identificarSerie;
+    }
+
+    public void setDescripcion(String descripcion) {
+        this.descripcion = descripcion;
+    }
+
+    public void setTipoPanel(String tipoPanel) {
+        this.tipoPanel = tipoPanel;
+    }
+
+    public void setNombreModelo(String nombreModelo) {
+        this.nombreModelo = nombreModelo;
+    }
+
+    public void setAnioFabricacion(int anioFabricacion) {
+        this.anioFabricacion = anioFabricacion;
+    }
+
+    public void setPrecioVenta(int precioVenta) {
+        this.precioVenta = precioVenta;
+    }
 }
+

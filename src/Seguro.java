@@ -8,7 +8,7 @@ public class Seguro {
     private LocalDate fechaInicioCobertura;
     private LocalDate fechaFinalCobertura;
     private String descripcion;
-    private int identificadirSeries;
+    private int identificadorSerie;
 
     //Constructores
     public Seguro() {
@@ -21,7 +21,7 @@ public class Seguro {
         this.fechaInicioCobertura = fechaInicioCobertura;
         this.fechaFinalCobertura = fechaFinalCobertura;
         this.descripcion = descripcion;
-        this.identificadirSeries = identificadirSeries;
+        this.identificadorSerie = identificadirSeries;
     }
 
     //Metodos
@@ -29,5 +29,47 @@ public class Seguro {
         Duration covertura = Duration.between(fechaInicioCobertura.atStartOfDay(), fechaFinalCobertura.atStartOfDay());
         long diasCovertura = covertura.toDays();
         return diasCovertura;
+    }
+
+    //Getter
+    public String getNombreEmpresaSeguro() {
+        return nombreEmpresaSeguro;
+    }
+
+    public LocalDate getFechaInicioCobertura() {
+        return fechaInicioCobertura;
+    }
+
+    public LocalDate getFechaFinalCobertura() {
+        return fechaFinalCobertura;
+    }
+
+    public String getDescripcion() {
+        return descripcion;
+    }
+
+    public int getIdentificadorSeries() {
+        return identificadorSerie;
+    }
+
+    //Setter
+    public void setNombreEmpresaSeguro(String nombreEmpresaSeguro) {
+        this.nombreEmpresaSeguro = nombreEmpresaSeguro;
+    }
+
+    public void setFechaInicioCobertura(LocalDate fechaInicioCobertura) {
+        this.fechaInicioCobertura = fechaInicioCobertura;
+    }
+
+    public void setFechaFinalCobertura(LocalDate fechaFinalCobertura) {
+        this.fechaFinalCobertura = fechaFinalCobertura;
+    }
+
+    public void setDescripcion(String descripcion) {
+        this.descripcion = descripcion;
+    }
+
+    public void setIdentificadorSeries(int identificadorSeries) {
+        this.identificadorSerie = identificadorSeries;
     }
 }
